@@ -1,0 +1,353 @@
+body{
+    background-color:#fafafc;
+}
+nav{
+    background-color:var(--primary-color);
+    max-height:90px;
+    color:#fff;
+    position: relative;
+}
+.nav-logo{
+    width:13.26%;
+    height:90px;
+    text-align: center;
+    
+}
+nav ul{
+    height:100%;
+}
+nav .vertical-line{
+    height:40px;
+}
+nav .title{
+    font-size:2rem;
+    line-height: 28px;
+    font-weight:700;
+    padding-left:26px;
+    
+}
+nav ul div.flex{
+    padding-right:28px;
+    margin-right:21.789%;
+}
+nav ul div .vertical-line{
+    height:30px;
+    width:1px;
+    padding:0;
+    margin:0 25.73px 0 25px;
+}
+nav ul div li{
+    font-size:1.8rem;
+    line-height:25px;
+    font-weight:600;
+
+}
+
+nav ul li .fa-hourglass-half{
+    font-size:2.5rem;
+    padding-right:20.24px;
+}
+nav ul .trophy{
+    width:32px;
+    height:32px;
+    border:2px solid;
+    border-radius:50%;
+    border-top-color: #00BF2A;
+    border-left-color: #00BF2A;
+    border-right-color: #00BF2A;
+    transform: rotate(45deg);
+    
+
+}
+nav ul li .fa-trophy{
+    font-size:1.4rem;
+    transform: rotate(-45deg);
+    
+
+}
+nav ul .bg-btn{
+    color:#049435;
+    background-color:#fff;
+    border-radius:10px;
+    height:50px;
+    width:199px;
+    font-size:1.8rem;
+    line-height:25px;
+    font-weight: 600;
+    position: absolute;
+    width: 13.891%;
+    right: 89.77px;
+    top: 16.27px;
+    
+   
+}
+nav ul .bg-btn:hover{
+    opacity:0.9;
+}
+.quantity-ques{
+    width:52px;
+    height:52px;
+    background-color:#676E86;
+    color:#fff;
+    border-top-right-radius:5px;
+    border-bottom-right-radius:5px;
+    border:none;
+    outline:none;
+    position: absolute;
+    z-index:3;
+    top:71px;
+    cursor:pointer;
+}
+.main-container{
+    background-color:#FAFAFC;
+    position: relative;
+    width:100%;
+    padding-top:20px;
+}
+.main-container .question-box{
+    background-color:#fff;
+    position:absolute;
+    z-index:2;
+    left:4px;
+    height:256px;
+    opacity:0;
+    width:0%;
+    border-radius:10px;
+    padding:14px 20px 28px;
+    box-shadow:2px 5px 20px rgba(42, 44, 49, 0.13);
+    transition:width 0.2s linear, opacity 0.2s ease-out;
+
+
+}
+/* transition show box question */
+.show-box .quantity-ques{
+    display:none;
+}
+.show-box .question-box{
+    width:25.694%;
+    opacity:1;
+}
+.show-box .question-container{
+    position: absolute;
+    right:0;
+    width:73.8889% !important;
+    padding-left:113px;
+}
+.main-container .question-box .header .title{
+    font-size:2rem;
+    line-height:28px;
+    font-weight:700;
+}
+.main-container .question-box .header .delete-icon{
+    color:#363E57;
+    font-size:2rem;
+    font-weight:700;
+    margin-right:6px;
+    cursor:pointer;
+}
+.question-box .content li{
+    font-size:1.8rem;
+    text-align:center;
+    line-height:40px;
+    width:40px;
+    height:40px;
+    font-weight:600;
+    border-radius:50%;
+    border:1px solid #C4C4C4;
+}
+.question-box .content li:hover{
+    border-color:#FF9E0D !important;
+}
+.question-box .content ul:first-child{
+    margin-bottom:16px;
+    margin-top:28.85px;
+}
+.question-box .line{
+    margin-top:17px;
+    margin-bottom:15.5px;
+}
+
+.question-box .flag{
+    font-size:1.8rem;
+    line-height:25px;
+    font-weight:600;
+    color:#363E57;
+}
+.question-box i.fa-flag{
+    color:#FF9E0D;
+    padding:0 15px 0 5px;
+    font-size:2.5rem;
+}
+
+.main-container .question-container{
+    width:81.25%;
+    margin:auto;
+    background-color:#fff;
+    border-radius:10px;
+    padding:60px 150px;
+
+}
+.question-list .question-item:not(:first-child){
+    margin-top:60px;
+}
+.question-list .question-item:not(:last-child){
+    padding:0 45px;
+}
+.question-list .question-item:nth-child(3){
+    margin:0 52px 0 15px;
+}
+.question-list .question-item p.question-num{
+    font-size:2rem;
+    font-weight:700;
+    line-height:28px;
+    color:#676E86;
+    margin-bottom:8px;
+}
+.question-list .question-item h1{
+    font-size:3.2rem;
+    font-weight:700;
+    line-height:41.6px;
+    color:#0E564D;
+    margin-bottom:10px;
+}
+.question-item .btn{
+    display:block;
+    font-size:2rem;
+    line-height:28px;
+    font-weight:400;
+    border-radius:10px;
+    margin:20px 0;
+}
+.question-list .question-item .question-btn{
+    
+    width:100%;
+    padding:17px 0;
+    
+   
+    color:#363E57;
+    border:1px solid #676E86;
+    
+}
+.question-list .question-item .question-btn:hover{
+    box-shadow:0px 0px 11px rgba(0,0,0,0.17);
+}
+.question-list .question-item .btn-col{
+    color:#000;
+    padding:25px 20px;
+    width:270px;
+    border:1px solid #B8BEC8;
+}
+
+
+/* Noi cot css */
+.col-left{
+    position: relative;
+}
+.col-left:after{
+    content:"";
+    position: absolute;
+    width:24px;
+    height:24px;
+    border-radius:50%;
+    border:1.5px solid #47BAAC;
+    background-color:#0E564D;
+    right:-12px;
+}
+.col-right{
+    position: relative;
+}
+.col-right:after{
+    content:"";
+    position: absolute;
+    width:24px;
+    height:24px;
+    border-radius:50%;
+    border:1.5px solid #47BAAC;
+    background-color:#0E564D;
+    left:-12px;
+}
+.connect-wrapper{
+    position: relative;
+    width:100%;
+    height:100%;
+}
+
+/* show pop up box */
+.popup-wrapper.show{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:rgba(0,0,0,0.3);
+    z-index:3;
+}
+.popup-wrapper.show .show{
+    display:block;
+    opacity:1;
+}
+.popup{
+    width:67.778%;
+    min-height:469px;
+    margin:auto;
+    background-color:#fff;
+    border:1px solid #B8BEC8;
+    border-radius:10px;
+    padding:0 100px;
+    position: absolute;
+    left:50%;
+    transform:translateX(-50%);
+    margin-top:6rem;
+    text-align:center;
+    opacity: 0;
+    display:none;
+    
+
+}
+.popup .popup-fail,
+.popup .popup-success{
+    padding:40px 0;
+
+}
+.popup .delete-popup{
+    position: absolute;
+    right: 25.81px;
+    top: -9px;
+    color:#363E57;
+    cursor: pointer;
+}
+.popup img{
+    
+    height:180px;
+}
+.popup h1{
+    color:#091230;
+    font-weight:700;
+    font-size:3.6rem;
+    line-height:46.8px;
+    margin:0 32px;
+    margin-bottom:30px;
+    margin-top:30px;
+}
+.popup p{
+    color:#676E86;
+    font-size:1.8rem;
+    line-height:27px;
+    font-weight:700;
+    margin:30px 0;
+}
+.popup .btn{
+    font-size:1.8rem;
+    font-weight:600;
+    line-height:25px;
+    padding:12.5px 80px;
+    border-radius:30px;
+    color:#078723;
+    border:1px solid #049435;
+    background-color:#fff;
+    cursor: pointer;
+}
+.popup .btn a{
+    color:#078723;
+
+}

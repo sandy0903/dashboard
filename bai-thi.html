@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bài thi thực hành</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/baithi.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/breakpoints.css">
+    <script src="https://cdn.tiny.cloud/1/6ywzy2j8je500rxng8x9tw6nc2vfbctgd2uhf7bglrnxhp9j/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container flex ai-center">
+            <div class="nav-logo">
+                <img src="./img/logo.png" alt="webiste-logo" class="logo-img" >
+            </div>
+            <div class="vertical-line"></div>
+            <div class="fl-1 ai-center">
+                
+                <ul class="flex ai-center jc-sb ">
+                        
+                    <li class="title">
+                    Thi kiểm tra chất lượng đầu vào 2021...
+                    </li>
+                    <div class="flex ai-center">
+                        <li>
+                            <i class="fas fa-hourglass-half"></i>
+                        </li>
+                        <li id="countdown-timer">
+                            
+                        </li>
+                        <div class="vertical-line"></div>
+                        <li class="trophy flex jc-center ai-center">
+                            <i class="fas fa-trophy"></i>
+                        </li>
+                        <li style="margin: 0 25px 0 12.27px">
+                            20/40
+                        </li>
+                        <li>
+                            <button class="btn bg-btn " id="submit-exam">Nộp bài</button>
+                        </li>
+                    </div>
+                            
+                       
+                </ul>
+                
+                
+            </div>
+        </div>
+    </nav>
+    <section class="main-container">
+       <div class="popup-wrapper ">
+            <div class="popup ">
+                <div class="popup-fail">
+                    <p class="delete-popup delete-popup-btn">X</p>
+                    <div class="popup-content">
+                        <img src="./img/result-fail.png" alt="result-exam">
+                        <h1>Khoan đã! Có vẻ bạn còn câu hỏi chưa trả lời</h1>
+                        <div class="btn-group flex ai-center jc-sb">
+                            <button class="btn" id="final-submit">Nộp bài</button>
+                            <button class="btn primary-bg delete-popup-btn">Làm tiếp</button>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <div class="popup ">
+                    <div class="popup-success">
+                        <p class="delete-popup delete-popup-btn">X</p>
+                        <div class="popup-content">
+                            <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_i4zw2ddg.json"  background="transparent"  speed="1"  style=" height: 180px;"  loop autoplay></lottie-player>
+                            <h1>Chúc mừng <br>bạn đã hoàn thành bài thi</h1>
+                            <p>Vui lòng chờ admin chấm câu tự luận nhé</p>
+                            <div class="btn-group flex ai-center jc-sb">
+                                <button class="btn delete-popup-btn" >Về trang chủ</button>
+                                <button class="btn primary-bg"><a href="./index.html">Về trang cá nhân</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+       </div>
+       
+                
+        <div >
+            <button class="quantity-ques " id="arrow-btn"><i class="fas fa-arrow-right"></i></button>
+            <div class="question-box">
+                <div class="header flex jc-sb ai-center">
+                    <p class="title">Danh sách câu hỏi</p>
+                    <p class="delete-icon">X</p>
+                </div>
+                <div class="content">
+                    <ul class="flex ai-center jc-sb">
+                        <li >1</li>
+                        <li class="active-question">2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                    </ul>
+
+                    <ul class="flex ai-center jc-sb">
+                            <li>7</li>
+                            <li>8</li>
+                            <li>9</li>
+                            <li>10</li>
+                            <li>11</li>
+                            <li>12</li>
+                    </ul>
+                </div>
+                <div class="line"></div>
+                <p class="flag"><i class="fas fa-flag"></i>Đặt cờ</p>
+            </div>
+
+            <div class="question-container">
+                <div class="question-list">
+                    <div class="question-item">
+                        <p class="question-num"><span><i class="fas check-icon"></i></span>Câu hỏi 1 (20 điểm):</p>
+                        <h1>IFA có bao nhiêu chi nhánh trên toàn quốc</h1>
+                        <button class="btn question-btn">Có 4 chi nhánh</button>
+                        <button class="btn question-btn">Hover</button>
+                        <button class="btn question-btn right " >Selected</button>
+                        <button class="btn question-btn">Có 7 chi nhánh</button>
+                    </div>
+                    <div class="question-item">
+                        <p class="question-num"><span><i class="fas check-icon"></i></span>Câu hỏi 1 (20 điểm):</p>
+                        <h1>Khi giới thiệu bản thân cần chú ý những điểm nào?</h1>
+                        <button class="btn question-btn">Thông tin "basic"</button>
+                        <button class="btn question-btn">Trạng thái hover</button>
+                        <button class="btn question-btn right">Tất cả các phương án</button>
+                        <button class="btn question-btn">Nơi sống nơi làm việc</button>
+                    </div>
+                    <div class="question-item">
+                        <p class="question-num"><span><i class="fas check-icon"></i></span>Câu hỏi 2 (20 điểm): Chọn từ thích hợp điền vào chỗ trống</p>
+                        <h1>Chọn từ thích hợp để nối</h1>
+                        <div class="col-wrapper flex jc-sb">
+                            <div class="question-col-1">
+                                <button class="btn btn-col col-left">Source 1</button>
+                                <button class="btn btn-col col-left">Source 2</button>
+                                <button class="btn btn-col col-left">Source 3</button>
+                                <button class="btn btn-col col-left">Source 4</button>
+                            </div>
+                            <!-- <div class="connect-wrapper" >
+                                <canvas id="myCanvas1" width="100%"></canvas>
+                                <canvas id="myCanvas2" ></canvas>
+                                <canvas id="myCanvas3" ></canvas>
+                                <canvas id="myCanvas4" ></canvas>
+                            </div> -->
+                            <div class="question-col-2">
+                                <button class="btn btn-col col-right">Target 1</button>
+                                <button class="btn btn-col col-right">Target 2</button>
+                                <button class="btn btn-col col-right">Target 3</button>
+                                <button class="btn btn-col col-right">Target 4</button>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                    <div class="question-item">
+                        <p class="question-num">Câu hỏi 4 (50 điểm):</p>
+                        <h1>Hãy trình bài các điểm yếu của bản thân, đưa ra lộ trình cải thiện dựa trên kiến thức đã học</h1>
+                        <textarea id="default"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./js/text-editor.js"></script>
+    <script src="./js/countdown.js"></script>
+    <script src="./js/show-box.js"></script>
+</body>
+</html>

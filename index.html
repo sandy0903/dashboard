@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/breakpoints.css">
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container flex">
+            <div class="nav-logo">
+                <img src="./img/logo.png" alt="webiste-logo" class="logo-img" >
+            </div>
+            <div class="nav-item flex fl-1 ai-center">
+                <div class="nav-item-links">
+                    <ul class="flex ai-center ">
+                        <li>
+                            <a href="#">Trang chủ</a>
+                        </li>
+                        <li>
+                            <a href="#">Khóa học</a>
+                        </li>
+                        <li>
+                            <a href="#">Tìm chuyên gia</a>
+                        </li>
+                        <li>
+                            <a href="#">Ưu đãi</a>
+                        </li>
+                        <li>
+                            <a href="#">Tin tức - Sự kiện</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-item-user ">
+                    <ul class="flex ai-center jc-center">
+                        <li class="user-cart flex jc-center ai-center">
+                            <i class="fas fa-shopping-cart"></i><span>2</span>
+                        </li>
+                        <li class="user-info flex ai-center">
+                            <img src="./img/user.png" alt="user-img" class="user-img"><span>lanlai1212</span>
+                        </li>
+                        <li class="user-noti">
+                            <i class="far fa-bell user-icon" ></i>
+                        </li>
+                        <li class="user-narrow">
+                            <i class="fas fa-chevron-down user-icon"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="main-container flex">
+            <aside class="left-navbar">
+                <div class="user-info">
+                    <img src="./img/user.png" alt="user-img"><span><i class="fas fa-camera camera-icon flex ai-center jc-center"></i></span>
+                    <h3 class="user-name">Tuyết Lan</h3>
+                    <p class="title">Học viên</p>
+                    <p class="private-info">Thông tin cá nhân</p>
+                </div>
+                <div class="user-list">
+                    <button class="btn" id="dashboard">
+                        Dashboard
+                    </button>
+                    <button class="btn" id="timeline">
+                        Timeline
+                    </button>
+                    <button class="btn" id="courses">
+                        Khóa học của tôi
+                    </button>
+                    <button class="btn" id="offline-schedual">
+                        Lịch học offline
+                    </button>
+                    <button class="btn" id="set-schedual">
+                        Đặt lịch học
+                    </button>
+                    <button class="btn" id="contribute-course">
+                        Khóa học đóng góp
+                    </button>
+                    <button class="btn active" id="exam-schedual">
+                        Kì thi của tôi
+                    </button>
+                    <button class="btn" id="certificate">
+                        Chứng chỉ của tôi
+                    </button>
+                    <button class="btn">
+                        One by one live
+                    </button>
+                    <button class="btn" id="history">
+                        Lịch sử giao dịch
+                    </button>
+                    <button class="btn" id="friend-list">
+                        Danh sách bạn bè
+                    </button>
+                    <button class="btn">
+                        Báo cáo thành tích
+                    </button>
+                </div>
+            </aside>
+            <div class="right-content">
+                <h1>Kỳ thi của tôi</h1>
+                <div class="exam-schedual">
+                    <div class="search-exam">
+                        <span><i class="fas fa-search search-icon"></i></span>
+                        <input type="text" placeholder="Tìm tên kỳ thi">
+                    </div>
+                    <div class="line"></div>
+                    <div class="exam-list">
+                        <div class="row flex">
+                            <div class="exam-item">
+                                <div class="item-link active-time">
+                                    <i class="fas fa-clipboard-list"></i>
+                                    <button class="btn primary-bg">
+                                        <a href="./bai-thi.html" target="_blank">Tham gia thi</a>
+                                    </button>
+                                </div>
+                                <div class="item-info">
+                                    <h4 class="title">
+                                        Giáo trình xây dựng thương hiệu bản thân trong năm
+                                    </h4>
+                                    <div class="time flex jc-sb ai-center">
+                                        <p>Bắt đầu thi lúc <span class="dark-text" class="dark-text">10h30</span></p>
+                                        <div class="vertical-line"></div>
+                                        <p class="dark-text">Ngày 21/12/2021</p>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="questions flex jc-sb ">
+                                        <p><i class="far fa-question-circle"></i>100 câu hỏi</p>
+                                        
+                                        <p><i class="far fa-clock"></i>60 phút</p>
+                                    </div>
+                    
+                                </div>
+                            </div>
+                            <div class="exam-item ">
+                                <div class="item-link active-time">
+                                    <i class="fas fa-hourglass-half"></i>
+                                    <!-- <button class="btn primary-bg">Tham gia thi</button> -->
+                                    <p class="countdown-title" id="show-countdown">Sẽ diễn ra trong:</p>
+                                    <p class="countdown-timer" id="countdown-timer">15h 30p 20s</p>
+                                </div>
+                                <div class="item-info">
+                                    <h4 class="title">
+                                        Giáo trình xây dựng thương hiệu bản thân trong năm
+                                    </h4>
+                                    <div class="time flex jc-sb ai-center">
+                                        <p>Bắt đầu thi lúc <span class="dark-text">10h30</span></p>
+                                        <div class="vertical-line"></div>
+                                        <p class="dark-text">Ngày 21/12/2021</p>
+                                    </div>
+                                    <div class="line"></div>   
+                                    <div class="questions flex jc-sb">
+                                        <p><i class="far fa-question-circle"></i>100 câu hỏi</p>
+                                        <p><i class="far fa-clock"></i>60 phút</p>
+                                    </div>
+                        
+                                </div>
+                            </div>
+                            <div class="exam-item">
+                                <div class="item-link">
+                                    <!-- <i class="fas fa-clipboard-list"></i>
+                                    <button class="btn primary-bg">Tham gia thi</button> -->
+                                </div>
+                                <div class="item-info">
+                                    <h4 class="title">
+                                        Giáo trình xây dựng thương hiệu bản thân trong năm
+                                    </h4>
+                                    <div class="time flex jc-sb ai-center">
+                                        <p>Bắt đầu thi lúc <span class="dark-text">10h30</span></p>
+                                        <div class="vertical-line"></div>
+                                        <p class="dark-text">Ngày 21/12/2021</p>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="questions flex jc-sb">
+                                        <p><i class="far fa-question-circle"></i>100 câu hỏi</p>
+                                        <p><i class="far fa-clock"></i>60 phút</p>
+                                    </div>
+            
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row flex">
+                            <div class="exam-item">
+                                <div class="item-link active-time">
+                                    <i class="far fa-calendar-check"></i>
+                                    <p class="title-result" >Đã kết thúc vào:</p>
+                                    <p class="countdown-result" id="countdownTimer-result">15h 30p 20s</p>
+                                    <p class="countdown-result" id="countdownDay-result">27.12.2020</p>
+                                    <!-- <button class="btn primary-bg">Tham gia thi</button> -->
+                                </div>
+                                <div class="item-info">
+                                    <h4 class="title">
+                                        Giáo trình xây dựng thương hiệu bản thân trong năm
+                                    </h4>
+                                    <div class="time flex jc-sb ai-center">
+                                        <p>Bắt đầu thi lúc <span class="dark-text">10h30</span></p>
+                                        <div class="vertical-line"></div>
+                                        <p class="dark-text">Ngày 21/12/2021</p>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="questions flex jc-sb">
+                                        <p><i class="far fa-question-circle"></i>100 câu hỏi</p>
+                                        <p><i class="far fa-clock"></i>60 phút</p>
+                                    </div>
+                        
+                                </div>
+                            </div>
+                            <div class="exam-item">
+                                <div class="item-link">
+                                    <!-- <i class="fas fa-clipboard-list"></i>
+                                    <button class="btn primary-bg">Tham gia thi</button> -->
+                                </div>
+                                <div class="item-info">
+                                    <h4 class="title">
+                                    Giáo trình xây dựng thương hiệu bản thân trong năm
+                                    </h4>
+                                    <div class="time flex jc-sb ai-center">
+                                        <p>Bắt đầu thi lúc <span class="dark-text">10h30</span></p>
+                                        <div class="vertical-line"></div>
+                                        <p class="dark-text">Ngày 21/12/2021</p>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="questions flex jc-sb">
+                                        <p><i class="far fa-question-circle"></i>100 câu hỏi</p>
+                                        <p><i class="far fa-clock"></i>60 phút</p>
+                                    </div>
+                            
+                                </div>
+                            </div>
+                            <div class="exam-item">
+                                <div class="item-link">
+                                    <!-- <i class="fas fa-clipboard-list"></i>
+                                    <button class="btn primary-bg">Tham gia thi</button> -->
+                                </div>
+                                <div class="item-info">
+                                    <h4 class="title">
+                                        Giáo trình xây dựng thương hiệu bản thân trong năm
+                                    </h4>
+                                    <div class="time flex jc-sb ai-center">
+                                        <p>Bắt đầu thi lúc <span class="dark-text">10h30</span></p>
+                                        <div class="vertical-line"></div>
+                                        <p class="dark-text">Ngày 21/12/2021</p>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="questions flex jc-sb">
+                                        <p><i class="far fa-question-circle"></i>100 câu hỏi</p>
+                                        <p><i class="far fa-clock"></i>60 phút</p>
+                                    </div>
+                            
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <h2>Kết quả thi</h2>
+                    <div class="primary-line"></div>                  
+                    <table>
+                        <tr>
+                            <th class="col-1">Thời gian</th>
+                            <th class="col-2">Tên kì thi</th>
+                            <th class="col-3">Số điểm</th>
+                            <th class="col-4">Thời gian hoàn thành</th>
+                            <th class="col-5">Kết quả</th>
+                        </tr>
+                        <tr>
+                            <td class="dark-text col-1">04.05.2021</td>
+                            <td class="col-2">Thi sát hạch chuyên môn khóa 1</td>
+                            <td class="col-3">90</td>
+                            <td class="col-4">45/60p</td>
+                            <td class="col-5"></td>
+                        </tr>
+                        <tr>
+                            <td class="dark-text col-1">04.05.2021</td>
+                            <td class="col-2">Thi lên chức</td>
+                            <td class="col-3">90</td>
+                            <td class="col-4"></td>
+                            <td class="col-5"></td>
+                            
+                        </tr> 
+                        <tr>
+                            <td class="dark-text col-1">04.05.2021</td>
+                            <td class="col-2">Thi lên chức</td>
+                            <td class="col-3">0</td>
+                            <td class="col-4"></td>
+                            <td class="col-5"></td>
+                        </tr>
+                    </table>
+    
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <script src="./js/countdown.js"></script>
+</body>
+</html>
