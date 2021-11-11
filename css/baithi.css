@@ -347,7 +347,16 @@ nav ul .bg-btn:hover{
     background-color:#fff;
     cursor: pointer;
 }
+.popup .btn.primary-bg{
+    padding:12.5px 61px;
+}
+.popup .btn.primary-bg a{
+    color:#fff;
+}
 .popup .btn a{
     color:#078723;
+    font-size:1.8rem;
+    font-weight:600;
+    line-height:25px;
 
 }

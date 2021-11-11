@@ -35,6 +35,7 @@ btnSubmit.onclick=function(){
     if(countResult>=2){
         popup.classList.add("show");
         popup.querySelector(".popup-success").parentElement.classList.add("show")
+        popup.querySelector("audio").play();
         btnSubmit.setAttribute("disable","");
     }else{
         popup.classList.add("show");
@@ -49,6 +50,7 @@ finalSubmit.onclick=function(){
         popup.querySelector(".popup-fail").parentElement.classList.remove("show")
         popup.classList.add("show");
         popup.querySelector(".popup-success").parentElement.classList.add("show")
+        popup.querySelector("audio").play();;
         btnSubmit.setAttribute("disable","");
     
 }
