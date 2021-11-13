@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded",()=>{
         var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
         countdownTimer.innerHTML=hours + "h "+ minutes + "m " + seconds + "s ";
-        btnSubmit.setAttribute("disable","");
+        
         if (distance < 0) {
             clearInterval(x);
             if(countdownWrapper){
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded",()=>{
                 </button>`
             }else{
                 countdownTimer.innerHTML="";
-                btnSubmit.removeAttribute("disable");
+                
                 
             }
             

@@ -1,0 +1,64 @@
+@media only screen and (max-width: 768px ) {
+    .navbar .nav-item-links a{
+        font-size:1.5rem;
+
+    }
+    nav .title {
+        display:none;
+    }
+    .navbar .nav-item-user{
+        display:none;
+    }
+    .main-container .left-navbar{
+        width:40%;
+        padding-left:0;
+
+    }
+    .main-container .left-navbar img{
+        width:100px;
+        height:100px;
+    }
+    .main-container .left-navbar .private-info{
+        margin-left:30px;
+    }
+    .right-content .exam-schedual{
+        border:none;
+    }
+    .right-content .search-exam{
+        width:100%;
+        
+    }
+    .exam-list .row{
+        flex-wrap:wrap;
+    }
+    .exam-list .row .exam-item {
+        width:90%;
+        margin:auto;
+        margin-bottom:20px;
+    }
+    table{
+        font-size:1.3rem;
+        position: absolute;
+        left: 10px;
+        /* right: 10px; */
+        width: 97%;
+    }
+    .col-1,
+    .col-2,
+    .col-3
+    {
+        padding-left:10px;
+    }
+
+}
+@media only screen and (max-width: 600px) {
+    .navbar .nav-item-links a{
+        font-size:1.3rem;
+    }
+    .main-container .left-navbar{
+        display:none;
+    }
+    .main-container .right-content{
+        width:100%;
+    }
+}

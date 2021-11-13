@@ -1,0 +1,32 @@
+@media only screen and (max-width: 768px ) {
+    nav .nav-logo{
+        width: 25%;
+    }
+    nav .title {
+        display:none;
+    }
+    .nav-container > .vertical-line{
+        display:none;
+    }
+    nav ul .bg-bt{
+        position: unset;
+        right: 0;
+        
+        width: 170px;
+    }
+    .main-container .question-container{
+            /* display: flex; */
+        padding: 10px 60px;
+        margin: initial;
+    }
+    .show-box .question-container{
+        
+    }
+    .question-list .question-item p.question-num{
+        font-size:1.3rem;
+    }
+    .question-list .question-item h1{
+        font-size:2rem;
+    }
+}
+@media only screen and (max-width: 600px) {}
