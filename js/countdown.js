@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded",()=>{
     if(countdownTimer.parentElement.classList.contains("item-link")){
         countdownWrapper=countdownTimer.parentElement;
     }
-    var coundownDate=new Date("Nov 11 2021 12:59:26").getTime();
+    var coundownDate=new Date("Nov 14 2021 23:59:00").getTime();
     var x=setInterval(()=>{
         var currentTime=new Date().getTime();
         var distance= coundownDate-currentTime;
