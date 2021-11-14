@@ -1,4 +1,4 @@
-@media only screen and (max-width: 768px ) {
+@media only screen and (max-width:1023px ) {
     .navbar .nav-item-links a{
         font-size:1.5rem;
 
@@ -49,9 +49,22 @@
     }
 
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 425px) {
     .navbar .nav-item-links a{
-        font-size:1.3rem;
+        font-size:1.2rem;
+    }
+    .navbar .nav-container{
+        height:90px;
+        text-align:center;
+    }
+    .navbar .nav-item-links{
+        margin:0;
+    }
+    .navbar .nav-logo{
+        display:none;
+    }
+    .navbar .nav-item{
+        justify-content: space-between;
     }
     .main-container .left-navbar{
         display:none;

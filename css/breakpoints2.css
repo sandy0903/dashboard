@@ -1,32 +1,79 @@
-@media only screen and (max-width: 768px ) {
-    nav .nav-logo{
-        width: 25%;
+@media only screen and (max-width: 1023px ) {
+    .navbar .nav-logo{
+        width:40%;
+
     }
-    nav .title {
+    .show-box .question-box{
+        width:42%;
+    }
+    .navbar .nav-logo ~ .vertical-line{
         display:none;
     }
-    .nav-container > .vertical-line{
+    .navbar .title{
         display:none;
     }
-    nav ul .bg-bt{
-        position: unset;
+    nav ul div.flex{
+        margin:0;
+        padding:0;
+    }
+    nav ul .bg-btn{
         right: 0;
-        
-        width: 170px;
+        width: 100px;
+        position: unset;
+        height: 40px;
+        font-size: smaller;
     }
+    .main-container .quantity-ques{
+        width: 25px;
+        height: 25px;
+    }   
     .main-container .question-container{
-            /* display: flex; */
-        padding: 10px 60px;
-        margin: initial;
+        padding: 30px 10px;
+        margin: 0;
     }
-    .show-box .question-container{
-        
+    .main-container .question-item{
+        padding: 0 30px;
     }
+    .main-container .question-num,
     .question-list .question-item p.question-num{
-        font-size:1.3rem;
+        font-size: 1rem;
+        line-height: 15px;
     }
     .question-list .question-item h1{
-        font-size:2rem;
+        font-size: 1.3rem;
+        line-height: 20px;
+    }
+    .main-container .btn.question-btn{
+        font-size: 1.3rem;
+        line-height: 15px;
+        padding: 10px;
+        width: 80%;
+
+    }
+    .question-list .question-item .btn-col{
+        width: 100px;
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+
+}
+@media only screen and (max-width: 425px) {
+    .navbar .nav-logo{
+        display:none;
+    }
+    .navbar .nav-container{
+        height:90px;
+        padding-left:10px;
+    }
+    .main-container .btn.question-btn{
+        width:100%;
+    }
+    .question-list .question-item .btn-col{
+        margin-right:50px;
+    }
+    .tox-tinymce{
+       
+        height: 200px;
+        width: 350px;
     }
 }
-@media only screen and (max-width: 600px) {}
