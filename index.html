@@ -18,7 +18,7 @@
                 <img src="./img/logo.png" alt="webiste-logo" class="logo-img" >
             </div>
             <div class="nav-item flex fl-1 ai-center">
-                <div class="nav-item-links">
+                <div class="nav-item-links ">
                     <ul class="flex ai-center ">
                         <li>
                             <a href="#">Trang chủ</a>
@@ -38,20 +38,28 @@
                     </ul>
                 </div>
                 <div class="nav-item-user ">
-                    <ul class="flex ai-center jc-center">
-                        <li class="user-cart flex jc-center ai-center">
-                            <i class="fas fa-shopping-cart"></i><span>2</span>
-                        </li>
-                        <li class="user-info flex ai-center">
-                            <img src="./img/user.png" alt="user-img" class="user-img"><span>lanlai1212</span>
-                        </li>
-                        <li class="user-noti">
-                            <i class="far fa-bell user-icon" ></i>
-                        </li>
-                        <li class="user-narrow">
-                            <i class="fas fa-chevron-down user-icon"></i>
-                        </li>
-                    </ul>
+                    <div class="overlay">
+                        <ul class="flex ai-center jc-center">
+                            <li class="user-cart flex jc-center ai-center">
+                                <i class="fas fa-shopping-cart"></i><span>2</span>
+                            </li>
+                            <li class="user-info flex ai-center">
+                                <img src="./img/user.png" alt="user-img" class="user-img"><span>lanlai1212</span>
+                            </li>
+                            <li class="user-noti">
+                                <i class="far fa-bell user-icon" ></i>
+                            </li>
+                            <li class="user-narrow">
+                                <i class="fas fa-chevron-down user-icon"></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="hamburger-menu">
+                        <span ></span>
+                        <span ></span>
+                        <span ></span>
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -113,7 +121,7 @@
                     </div>
                     <div class="line"></div>
                     <div class="exam-list">
-                        <div class="row flex">
+                        <div class="row flex fl-wrap">
                             <div class="exam-item">
                                 <div class="item-link active-time">
                                     <i class="fas fa-clipboard-list"></i>
@@ -185,8 +193,8 @@
             
                                 </div>
                             </div>
-                        </div>
-                        <div class="row flex">
+                        
+                       
                             <div class="exam-item">
                                 <div class="item-link active-time">
                                     <i class="far fa-calendar-check"></i>
@@ -299,5 +307,6 @@
         </div>
     </section>
     <script src="./js/countdown.js"></script>
+    <script src="./js/overlay.js"></script>
 </body>
 </html>

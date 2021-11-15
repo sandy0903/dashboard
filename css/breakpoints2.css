@@ -1,6 +1,6 @@
-@media only screen and (max-width: 1023px ) {
+@media only screen and (max-width:1279px)  {
     .navbar .nav-logo{
-        width:40%;
+        width:20%;
 
     }
     .show-box .question-box{
@@ -9,9 +9,9 @@
     .navbar .nav-logo ~ .vertical-line{
         display:none;
     }
-    .navbar .title{
+    /* .navbar .title{
         display:none;
-    }
+    } */
     nav ul div.flex{
         margin:0;
         padding:0;
@@ -29,7 +29,7 @@
     }   
     .main-container .question-container{
         padding: 30px 10px;
-        margin: 0;
+       
     }
     .main-container .question-item{
         padding: 0 30px;
@@ -55,15 +55,41 @@
         font-size: 1.5rem;
         padding: 10px;
     }
+    .popup .btn,
+    .popup .btn.primary-bg{
+        padding:10px 37px;
+    }
+    .popup h1{
+        font-size:2rem;
+    }
 
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width:1000px){
+    .popup h1{
+        margin-bottom:10px;
+    }
+    .popup p{
+        margin:10px;
+    }
+    .popup .btn, .popup .btn.primary-bg{
+        padding: 10px 13px;
+    }
+    .question-list .question-item .btn-col{
+        margin-right:0;
+    }
+    
+}
+@media only screen and (max-width: 768px) {
     .navbar .nav-logo{
         display:none;
+    }
+    .show-box .question-box{
+        width:60%;
     }
     .navbar .nav-container{
         height:90px;
         padding-left:10px;
+        justify-content: center;
     }
     .main-container .btn.question-btn{
         width:100%;
@@ -71,9 +97,90 @@
     .question-list .question-item .btn-col{
         margin-right:50px;
     }
-    .tox-tinymce{
-       
-        height: 200px;
-        width: 350px;
+    
+    .question-list .question-item:nth-child(3){
+        margin:0;
+    }
+    .question-list .question-item:not(:last-child){
+        padding:0;
+    }
+    .tox:not([dir=rtl]){
+        width:100%;
+    }
+    .popup{
+        padding:0;
+    }
+    
+    .main-container .question-item{
+        padding:0;
+    }
+    .question-list .question-item .btn-col{
+        margin-right:0;
+        margin-left:10px;
+    }
+    .popup-fail .btn, .popup-fail .btn.primary-bg{
+        padding:10px 50px;
+    }
+}
+@media only screen and (max-width: 600px){
+    nav .title{
+        display:none;
+    }
+} 
+@media only screen and (max-width: 500px){
+    .show-box .question-box{
+        width:100%;
+    }
+    .popup .btn{
+        font-size:1.3rem;
+    }
+    .popup{
+        min-height:300px;
+        width:100%;
+    }
+    .popup-fail,
+    .popup-success{
+        width:100%;
+    }
+    .popup h1{
+        font-size:1.5rem;
+        line-height:normal;
+    }
+    #final-submit{
+        padding:10px 42px;
+    }
+    
+    .popup .btn, .popup .btn.primary-bg{
+        padding:10px 40px;
+    }
+    .btn.primary-bg{
+        padding:10px 30px;
+    }
+    .btn.primary-bg a{
+        font-size:1.3rem;
+    }
+    .popup-success .btn.delete-popup-btn{
+        padding:10px 18px;
+    }
+    .popup-success .btn.primary-bg{
+        padding:10px 10px;
+    }
+}
+@media only screen and (max-width: 300px){
+    ul li.inline{
+        margin: 0 10px !important;
+    }
+    .vertical-line{
+        display:none;
+    }
+    .btn .bg-btn{
+        position: absolute;
+    }
+    .col-right:after,
+    .col-left:after{
+        display:none;
+    }
+    .question-list .question-item .btn-col{
+        width:70px;
     }
 }

@@ -1,75 +1,148 @@
-@media only screen and (max-width:1023px ) {
-    .navbar .nav-item-links a{
-        font-size:1.5rem;
-
+@media only screen and (max-width:1279px) {
+    html{
+        font-size:58%;
     }
-    
-    .navbar .nav-item-user{
-        display:none;
+    .nav-logo{
+        width:15%;
     }
     .main-container .left-navbar{
-        width:40%;
         padding-left:0;
-
     }
-    .main-container .left-navbar img{
+
+
+}
+@media only screen and (max-width:1144px) {
+    html{
+        font-size:45%;
+    }
+    
+
+
+}
+@media only screen and (max-width:1000px) {
+    html{
+        font-size:50%;
+    }
+    .left-navbar .user-info img{
         width:100px;
         height:100px;
     }
-    .main-container .left-navbar .private-info{
-        margin-left:30px;
+    .left-navbar .user-info .camera-icon{
+        width:30px;
+        height:30px;
     }
-    .right-content .exam-schedual{
-        border:none;
+    .nav-item-user div:first-child{
+        opacity: 0;
+        display: none;
     }
-    .right-content .search-exam{
+    .nav-item-user .hamburger-menu{
+        display:block;
+        opacity: 1;
+        width:10rem ;
+        height:10rem;
+        margin-top:40px;
+    }
+    .nav-item-links{
+        flex:1;
+    }
+    .nav-item-user .hamburger-menu span{
+        display:block;
+        width:3rem;
+        height:2px;
+       
+        background-color:#000;
+    }
+    .nav-item-user .hamburger-menu span:nth-child(2){
+        margin:5px 0;
+    }
+    .left-navbar .user-info .private-info{
+        width:20rem;
+    }
+    .exam-schedual .search-exam{
         width:100%;
+    }
+    .exam-schedual .exam-list .row{
+        flex-wrap: wrap;
+
+    }
+    .exam-list .row .exam-item{
+        width:50%;
+    }
+}
+@media only screen and (max-width: 790px) {
+    .left-navbar{
+        width:40%;
+    }
+    
+    .left-navbar .user-info{
         
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-    .exam-list .row{
-        flex-wrap:wrap;
-    }
-    .exam-list .row .exam-item {
-        width:90%;
-        margin:auto;
-        margin-bottom:20px;
-    }
-    table{
+    .nav-item a{
         font-size:1.3rem;
-        position: absolute;
-        left: 10px;
-        /* right: 10px; */
-        width: 97%;
     }
-    .col-1,
-    .col-2,
-    .col-3
-    {
-        padding-left:10px;
+    .left-navbar .user-info span{
+        width: 100px;
+        position: relative;
+    }
+    .left-navbar .user-info .camera-icon{
+        width: 30px;
+        height: 30px;
+        right: 0;
+        bottom: 0;
+    }
+    .exam-list .row .exam-item{
+        width:100%;
     }
 
 }
-@media only screen and (max-width: 425px) {
-    .navbar .nav-item-links a{
-        font-size:1.2rem;
+@media only screen and (max-width: 650px){
+    .left-navbar{
+        width:30%;
     }
-    .navbar .nav-container{
-        height:90px;
-        text-align:center;
-    }
-    .navbar .nav-item-links{
-        margin:0;
-    }
-    .navbar .nav-logo{
+    
+    .nav-item .nav-item-links{
         display:none;
+        opacity:0;
     }
-    .navbar .nav-item{
+    
+
+    .nav-item-user .hamburger-menu{
+        width:4rem;
+    }
+    .nav-logo{
+        width:90%;
+    }
+    .main-container{
+        flex-direction:column;
+    }
+    .left-navbar{
+        width:100%;
+    }
+    .left-navbar .user-list{
+        display:flex;
+        flex-wrap: wrap;
         justify-content: space-between;
     }
-    .main-container .left-navbar{
-        display:none;
+    .nav-item .nav-item-user{
+        padding:0;
     }
-    .main-container .right-content{
+    .left-navbar .user-list .btn{
+        width:30%;
+    }
+    .right-content{
         width:100%;
+    }
+    .right-content table{
+        font-size:1rem;
+    }
+    .col-1,
+    .col-2,
+    .col-3{
+        padding:0;
+        text-align: center;
     }
 }
